@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     element:<Home />
   },
   {
-    path:"movie/:id",
+    path:`${process.env.PUBLIC_URL}/movie:id`,
     element:<Detail />
   }
 ])
