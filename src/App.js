@@ -4,10 +4,10 @@ import {
 } from "react-router-dom";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
-
 const router = createBrowserRouter([
+  
   {
-    path: '/',
+    path: `${process.env.PUBLIC_URL}/`,
     element:<Home />
   },
   {
