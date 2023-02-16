@@ -7,14 +7,16 @@ import Detail from "./routes/Detail";
 const router = createBrowserRouter([
   
   {
-    path: `${process.env.PUBLIC_URL}/`,
+    path: `/`,
     element:<Home />
   },
   {
-    path:`${process.env.PUBLIC_URL}/movie:id`,
+    path:`movie/:id`,
     element:<Detail />
   }
-])
+],{
+  basename:`${process.env.PUBLIC_URL}`
+})
 
 function App() {
   return <RouterProvider router={router} />
